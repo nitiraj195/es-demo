@@ -67,7 +67,7 @@
         dest: /opt/elasticsearch/create-certs.yml
         mode: '0644'
 
-    - name: "copy environment config file to consumer server"
+    - name: "copy environment config file to elasticsearch server"
       copy:
         src: /tmp/config/.env
         dest: /opt/elasticsearch/.env
